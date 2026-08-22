@@ -2,7 +2,7 @@
 
 <div align="center">
 
-### 🚀 Hands-on AWS Cloud Infrastructure & Linux Server Administration
+## 🚀 Hands-on AWS Cloud Infrastructure & Linux Administration
 
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange?style=for-the-badge&logo=amazon-aws)
 ![EC2](https://img.shields.io/badge/Amazon-EC2-orange?style=for-the-badge&logo=amazon-aws)
@@ -15,86 +15,88 @@
 
 ---
 
-## 📌 About the Project
+## 📌 Project Overview
 
-This project demonstrates hands-on practice with core **AWS Cloud Infrastructure** services.
+This project demonstrates hands-on practice with core AWS cloud infrastructure services.
 
-The project focuses on compute, storage, identity and access management, networking, Linux server administration and secure remote access.
+The project covers compute, storage, identity and access management, networking, Linux server administration, security groups and secure SSH connectivity.
 
-### 🎯 Objectives
+### 🎯 Project Objectives
 
-- ☁️ Understand AWS cloud infrastructure
-- 🖥️ Deploy and manage an EC2 Linux server
-- 🗄️ Create and manage S3 storage
-- 🔐 Configure IAM users, groups, policies and roles
-- 🌐 Work with VPC networking
-- 🛡️ Configure security groups
-- 🐧 Practice Linux administration
-- 🔑 Connect to EC2 using SSH
+- Deploy and manage an Amazon EC2 Linux server
+- Create and manage Amazon S3 storage
+- Configure IAM users, groups, policies and roles
+- Work with Amazon VPC networking
+- Configure security groups
+- Connect to EC2 using SSH
+- Practice basic Linux server administration
+- Understand basic AWS cloud security
 
 ---
 
-# 🏗️ AWS Architecture
+## 🏗️ AWS Architecture
 
-```text
+<pre>
                          👨‍💻 USER
                             │
               ┌─────────────┴─────────────┐
               │                           │
-           🔑 SSH                    🔐 IAM
+           🔑 SSH                      🔐 IAM
               │                           │
               ▼                           ▼
-       ┌────────────────────────────────────────┐
-       │             ☁️ AWS CLOUD               │
-       │                                        │
-       │        ┌─────────────────────┐         │
-       │        │    🌐 AMAZON VPC    │         │
-       │        │                     │         │
-       │        │  🛡️ Security Group │         │
-       │        │          │          │         │
-       │        │          ▼          │         │
-       │        │  ┌───────────────┐  │         │
-       │        │  │ 🖥️ AMAZON EC2 │  │         │
-       │        │  │  Linux Server │  │         │
-       │        │  └───────┬───────┘  │         │
-       │        │          │          │         │
-       │        └──────────┼──────────┘         │
-       │                   │                    │
-       │                   ▼                    │
-       │          ┌─────────────────┐           │
-       │          │   🗄️ AMAZON S3  │           │
-       │          │ Object Storage  │           │
-       │          └─────────────────┘           │
-       │                                        │
-       └────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────┐
+│                    ☁️ AWS CLOUD                     │
+│                                                     │
+│              ┌──────────────────────┐               │
+│              │     🌐 AMAZON VPC    │               │
+│              │                      │               │
+│              │  🛡️ Security Group  │               │
+│              │          │           │               │
+│              │          ▼           │               │
+│              │   ┌──────────────┐   │               │
+│              │   │ 🖥️ AMAZON EC2│   │               │
+│              │   │ Linux Server │   │               │
+│              │   └───────┬──────┘   │               │
+│              │           │          │               │
+│              └───────────┼──────────┘               │
+│                          │                          │
+│                          ▼                          │
+│                 ┌─────────────────┐                │
+│                 │  🗄️ AMAZON S3   │                │
+│                 │  Object Storage │                │
+│                 └─────────────────┘                │
+│                                                     │
+└─────────────────────────────────────────────────────┘
 
-             🔐 IAM → Access Management
-             🌐 VPC → Networking
-             🖥️ EC2 → Compute
-             🗄️ S3 → Storage
-             🔑 SSH → Secure Server Access
+🔐 IAM   → Identity & Access Management
+🌐 VPC   → Networking
+🖥️ EC2   → Compute
+🗄️ S3    → Object Storage
+🔑 SSH   → Secure Server Access
+</pre>
+
+---
 
 ## ☁️ AWS Services Used
 
 | Service | Purpose |
 |---|---|
-| 🖥️ Amazon EC2 | Compute and Linux server |
+| 🖥️ Amazon EC2 | Linux server and compute |
 | 🗄️ Amazon S3 | Object storage |
-| 🔐 AWS IAM | Users, groups, policies and roles |
-| 🌐 Amazon VPC | Cloud networking |
+| 🔐 AWS IAM | Identity and access management |
+| 🌐 Amazon VPC | Networking |
 | 🛡️ Security Groups | Network access control |
+| 🔑 SSH | Secure remote server access |
 | 🐧 Linux | Server administration |
-| 🔑 SSH | Secure server connectivity |
 
 ---
 
-## 🔧 Implementation
+## 🔧 Project Implementation
 
 ### 🖥️ 1. Amazon EC2
 
-- Launched an EC2 instance.
-- Configured instance access.
-- Connected to the server using SSH.
+- Launched and configured an EC2 instance.
+- Connected to the instance using SSH.
 - Performed basic Linux server configuration.
 - Practiced EC2 instance management.
 
@@ -103,88 +105,93 @@ The project focuses on compute, storage, identity and access management, network
 - Created an S3 bucket.
 - Uploaded objects to the bucket.
 - Managed stored objects.
-- Practiced basic cloud storage management.
+- Practiced cloud storage management.
 
 ### 🔐 3. AWS IAM
 
 - Created IAM users.
 - Created IAM groups.
-- Worked with IAM policies.
-- Practiced IAM roles.
-- Applied basic access-management concepts.
+- Configured IAM policies.
+- Worked with IAM roles.
+- Practiced access management concepts.
 
 ### 🌐 4. Amazon VPC
 
 - Worked with VPC networking components.
 - Practiced subnet and networking concepts.
 - Configured security groups.
-- Applied basic network access-control concepts.
+- Practiced basic network access control.
 
 ### 🐧 5. Linux & SSH
 
-- Connected to EC2 using SSH.
-- Practiced Linux commands.
-- Performed basic server administration.
+- Connected to the EC2 server using SSH.
+- Practiced basic Linux commands.
 - Managed files and directories.
-- Practiced basic server configuration.
+- Performed basic server administration.
+
+---
+
+## 🔒 Security Practices
+
+- 🔐 Practiced IAM-based access management
+- 🛡️ Configured security groups
+- 🔑 Used SSH for secure server access
+- 🔒 Practiced basic least-privilege concepts
+- 🚫 No AWS credentials are stored in this repository
+
+> ⚠️ Never upload AWS Access Keys, Secret Keys, `.pem` files, passwords or `.env` files to GitHub.
+
+---
 
 ## 🛠️ Technologies & Tools
 
-- ☁️ Amazon Web Services (AWS)
-- 🖥️ Amazon EC2
-- 🗄️ Amazon S3
-- 🔐 AWS IAM
-- 🌐 Amazon VPC
-- 🛡️ Security Groups
-- 🐧 Linux
-- 🔑 SSH
-- 💻 AWS Management Console
+### Cloud
+- Amazon Web Services (AWS)
+- Amazon EC2
+- Amazon S3
+- AWS IAM
+- Amazon VPC
+
+### Server & Networking
+- Linux
+- SSH
+- Security Groups
+
+### Tools
+- AWS Management Console
 
 ---
 
-## 📚 Key Concepts Practiced
+## 🧠 Skills Demonstrated
 
-### ☁️ Cloud Computing
-Understanding how cloud resources can be provisioned, configured and managed using AWS.
-
-### 🖥️ Compute
-Hands-on practice with Amazon EC2 instances and Linux server environments.
-
-### 🗄️ Storage
-Hands-on practice creating S3 buckets and managing objects.
-
-### 🔐 Identity & Access Management
-Understanding IAM users, groups, policies and roles.
-
-### 🌐 Networking
-Understanding VPC networking, security groups and basic network access control.
-
-### 🐧 Linux Administration
-Practiced basic Linux commands, file management and server configuration.
-
-### 🔑 Secure Access
-Used SSH to securely connect to the Linux-based EC2 instance.
+- AWS Cloud Infrastructure
+- EC2 Instance Management
+- S3 Storage Management
+- IAM Access Management
+- VPC Networking
+- Security Groups
+- Linux Administration
+- SSH Connectivity
+- Basic Cloud Security
+- AWS Resource Management
 
 ---
 
-## 📸 Project Implementation
+## 📸 Project Screenshots
 
-### EC2 Instance
-Configured and managed an Amazon EC2 Linux instance.
+AWS implementation screenshots can be added to this repository to demonstrate the practical configuration.
 
-### S3 Bucket
-Created an S3 bucket and uploaded objects for cloud storage practice.
+Recommended screenshots:
 
-### IAM
-Configured users, groups, policies and roles for access management.
-
-### VPC
-Worked with AWS networking components and security groups.
-
-### Linux Server
-Performed basic Linux server administration through SSH.
-
-> 📌 Screenshots of the AWS implementation can be added here.
+1. EC2 Instance
+2. EC2 Security Group
+3. SSH Connection
+4. S3 Bucket
+5. S3 Objects
+6. IAM Users
+7. IAM Groups / Policies
+8. VPC
+9. Security Groups
 
 ---
 
@@ -193,11 +200,11 @@ Performed basic Linux server administration through SSH.
 Through this project, I gained practical exposure to:
 
 - AWS cloud infrastructure
-- EC2 instance management
+- EC2 instance deployment and management
 - S3 object storage
-- IAM access management
+- IAM users, groups, policies and roles
 - VPC networking
-- Security groups
+- Security group configuration
 - Linux server administration
 - SSH connectivity
 - Basic cloud security
@@ -205,19 +212,39 @@ Through this project, I gained practical exposure to:
 
 ---
 
+## 🎓 Training
+
+### AWS Solution Architect - Associate
+
+**FITA Academy, Chennai**
+
+**Issued:** January 2026
+
+---
+
 ## 👨‍💻 About Me
 
 I am a B.Sc. Computer Science graduate with hands-on practice in AWS Cloud Infrastructure and Linux administration.
 
-I am currently seeking **entry-level opportunities in AWS Cloud, Cloud Support, Cloud Infrastructure and Junior DevOps roles**.
+I am seeking entry-level opportunities in:
 
-### Technical Skills
+- AWS Cloud
+- Cloud Support
+- Cloud Infrastructure
+- Cloud Operations
+- Junior DevOps
+
+I am interested in building practical cloud infrastructure solutions and continuously improving my AWS and Linux skills.
+
+---
+
+## 💻 Technical Skills
 
 **AWS:** EC2, S3, IAM, VPC, CloudWatch, ELB
 
 **Cloud & Infrastructure:** Cloud Infrastructure, Networking, Security Groups
 
-**Operating Systems:** Linux
+**Operating System:** Linux
 
 **Tools:** SSH, AWS Management Console
 
@@ -225,49 +252,46 @@ I am currently seeking **entry-level opportunities in AWS Cloud, Cloud Support, 
 
 ---
 
-## 📜 Certification
-
-**AWS Solution Architect – Associate**
-
-FITA Academy  
-Issued: January 2026
-
----
-
 ## 🔗 Connect With Me
 
-**LinkedIn:**  
+### LinkedIn
+
 https://www.linkedin.com/in/divesh-kumar-580699357
 
-**GitHub:**  
+### GitHub
+
 https://github.com/DIVESHKUMAR07
 
 ---
 
 ## ⭐ Project Highlights
 
-⭐ Hands-on AWS cloud infrastructure project
+✅ AWS Cloud Infrastructure
 
-⭐ EC2 Linux server configuration
+✅ Amazon EC2 Linux Server
 
-⭐ S3 object storage management
+✅ Amazon S3 Object Storage
 
-⭐ IAM access management
+✅ AWS IAM Access Management
 
-⭐ VPC networking practice
+✅ Amazon VPC Networking
 
-⭐ SSH-based server administration
+✅ Security Groups
 
-⭐ Basic cloud security implementation
+✅ Linux Administration
+
+✅ SSH Connectivity
+
+✅ Basic Cloud Security
 
 ---
 
 <div align="center">
 
-### ☁️ Built while learning AWS Cloud Infrastructure
+## ☁️ Learn • Build • Deploy • Improve
 
-**Divesh Kumar**
+### Built by Divesh Kumar
 
-⭐ If you find this project useful, consider giving it a star!
+⭐ Thanks for visiting this project!
 
 </div>
