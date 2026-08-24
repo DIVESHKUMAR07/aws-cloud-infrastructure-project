@@ -176,25 +176,6 @@ The project covers compute, storage, identity and access management, networking,
 - AWS Resource Management
 
 ---
-
-## 📸 Project Screenshots
-
-AWS implementation screenshots can be added to this repository to demonstrate the practical configuration.
-
-Recommended screenshots:
-
-1. EC2 Instance
-2. EC2 Security Group
-3. SSH Connection
-4. S3 Bucket
-5. S3 Objects
-6. IAM Users
-7. IAM Groups / Policies
-8. VPC
-9. Security Groups
-
----
-
 ## 🎯 Learning Outcomes
 
 Through this project, I gained practical exposure to:
@@ -218,13 +199,13 @@ Through this project, I gained practical exposure to:
 
 **FITA Academy, Chennai**
 
-**Issued:** January 2026
+**Completed:** August 2026
 
 ---
 
 ## 👨‍💻 About Me
 
-I am a B.Sc. Computer Science graduate with hands-on practice in AWS Cloud Infrastructure and Linux administration.
+I am a B.Sc. Computer Science student with hands-on practice in AWS Cloud Infrastructure and Linux.
 
 I am seeking entry-level opportunities in:
 
